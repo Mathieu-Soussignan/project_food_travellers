@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ma carte interactive de restaurants - Recherche</title>
+  </head>
+  <body>
+    <h1>Recherche de restaurants</h1>
+    <form>
+      <label for="cuisine">Cuisine :</label>
+      <select id="cuisine" name="cuisine">
+        <option value="">Toutes les cuisines</option>
+        <option value="italienne">Cuisine italienne</option>
+        <option value="francaise">Cuisine française</option>
+        <option value="japonaise">Cuisine japonaise</option>
+      </select>
+
+      <label for="prix">Prix :</label>
+      <input type="range" id="prix" name="prix" min="1" max="500" step="1">
+
+      <label for="emplacement">Emplacement :</label>
+      <input type="text" id="emplacement" name="emplacement">
+
+      <label for="vegetarien">Options végétariennes :</label>
+      <input type="checkbox" id="vegetarien" name="vegetarien">
+
+      <input type="submit" value="Rechercher">
+    </form>
+  </body>
+</html>
